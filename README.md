@@ -24,12 +24,10 @@ Task solution:
 	5. Script will install docker with docker compose and run 3 containers with LAMP stack and Nagious
 
 	[root@localhost admin]# docker ps
-
-CONTAINER ID        IMAGE                       COMMAND                  CREATED              STATUS              PORTS                            NAMES
-
-f460ac9f276f        jasonrivers/nagios:latest   "/usr/local/bin/st..."   About a minute ago   Up About a minute   80/tcp, 0.0.0.0:8081->8081/tcp   dockerized-lamp_nagios_1
-08f55f93dfb8        php:7.2.1-apache            "docker-php-entryp..."   23 hours ago         Up About a minute   0.0.0.0:80->80/tcp               dockerized-lamp_php-apache_1
-396aae82626e        mariadb:10.1                "docker-entrypoint..."   23 hours ago         Up 3 minutes        3306/tcp                         dockerized-lamp_mariadb_1
+	CONTAINER ID        IMAGE                       COMMAND                  CREATED              STATUS              PORTS                            NAMES
+	f460ac9f276f        jasonrivers/nagios:latest   "/usr/local/bin/st..."   About a minute ago   Up About a minute   80/tcp, 0.0.0.0:8081->8081/tcp   dockerized-lamp_nagios_1
+	08f55f93dfb8        php:7.2.1-apache            "docker-php-entryp..."   23 hours ago         Up About a minute   0.0.0.0:80->80/tcp               dockerized-lamp_php-apache_1
+	396aae82626e        mariadb:10.1                "docker-entrypoint..."   23 hours ago         Up 3 minutes        3306/tcp                         dockerized-lamp_mariadb_1
 
 Access the demo webpage at "localhost"
 Access Nagios at "localhost:8081/nagios"
